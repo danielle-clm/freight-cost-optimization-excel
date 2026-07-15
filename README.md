@@ -198,3 +198,5 @@ This project was built over several weeks, learning
 Excel Solver, verifying rates against real market data,  
 and refining the model as I learned more about how  
 real freight decisions work.
+
+![Dashboard Preview](dashboard_preview.jpg)
