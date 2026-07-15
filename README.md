@@ -1,11 +1,10 @@
-# 🚢 Freight Cost Optimization — Shanghai to Africa
+# 🚢 Freight Cost Optimization : Shanghai to Africa
 ### Excel-Based Supply Chain Analytics Project
-
-**Analyst:** Danielle Claude Massala | Intern, Maersk | July 2026  
+ 
 **Tools:** Excel (Solver, VLOOKUP, SUMPRODUCT, Dashboard)  
 **Domain:** Supply Chain | Freight Analytics | Route Optimization  
 **Context:** Built during one of the most disruptive periods 
-in modern shipping history — the 2026 US-Israel-Iran conflict 
+in modern shipping history, the 2026 US-Israel-Iran conflict 
 and its aftermath on Africa-bound trade lanes
 
 ---
@@ -13,7 +12,7 @@ and its aftermath on Africa-bound trade lanes
 ## 📌 The Business Problem
 
 A medical supply company needs to ship **300 containers (TEUs)** 
-from Shanghai to 3 African markets — Pointe-Noire (Congo), 
+from Shanghai to 3 African markets: Pointe-Noire (Congo), 
 Mombasa (Kenya), and Lagos (Nigeria).
 
 Given multiple carriers and routes, the question is:
@@ -21,7 +20,7 @@ Given multiple carriers and routes, the question is:
 > route/carrier combinations to minimize total freight cost 
 > while serving all 3 markets?*
 
-This project answers that question — and reveals why the 
+This project answers that question, and reveals why the 
 cheapest answer isn't always the right answer.
 
 ---
@@ -31,34 +30,34 @@ cheapest answer isn't always the right answer.
 | Sheet | Purpose |
 |---|---|
 | Data_Input | Raw route, carrier & cost component data (15 combinations) |
-| Cost_Calculator_v1 | Unconstrained Solver model — baseline |
-| Cost_Calculator_v2 | Constrained Solver model — realistic |
+| Cost_Calculator_v1 | Unconstrained Solver model, baseline |
+| Cost_Calculator_v2 | Constrained Solver model, realistic |
 | Solver_v1 | V1 setup, constraints & results documentation |
 | Solver_v2 | V2 setup, constraints & results documentation |
-| Dashboard | Visual summary — KPIs, charts, V1 vs V2 comparison |
+| Dashboard | Visual summary : KPIs, charts, V1 vs V2 comparison |
 | Insights | Full analytical report with findings & recommendations |
 | Charts_Data | Data source for dashboard charts |
 | Sources | Data sources & assumptions log |
 
 ---
 
-## 🌍 Market Context — Why This Matters in 2026
+## 🌍 Market Context : Why This Matters in 2026
 
 This model was built against a backdrop of extreme market 
 volatility:
 
 - **US-Israel-Iran conflict (Feb-June 2026):** Closed the 
   Strait of Hormuz, forcing all major carriers (Maersk, MSC, 
-  CMA CGM) to reroute via Cape of Good Hope — adding 10-20 
+  CMA CGM) to reroute via Cape of Good Hope, adding 10-20 
   days to transit times and triggering emergency surcharges 
   of $2,000-$4,000 per TEU industry-wide
 - **Mombasa port congestion:** 5.33-day average vessel 
-  waiting time as of June 2026 — our highest-allocated 
+  waiting time as of June 2026, our highest-allocated 
   destination
-- **CMA CGM €700M Mombasa investment:** Signed May 2026 — 
+- **CMA CGM €700M Mombasa investment:** Signed May 2026, 
   directly impacting the carrier our model selected
 - **Pointe-Noire deep-water terminal:** Under development 
-  with AD Ports Group — positioning my home port as a future 
+  with AD Ports Group, positioning my home port as a future 
   Atlantic hub for Central Africa
 
 ---
@@ -99,7 +98,7 @@ subject to constraints.
 
 ## 📊 Results
 
-### V1 — Unconstrained (Baseline)
+### V1 : Unconstrained (Baseline)
 | | |
 |---|---|
 | Total Cost | $1,235,400 |
@@ -107,7 +106,7 @@ subject to constraints.
 | Problem | 2 markets unserved. 100% carrier dependency. |
 | Verdict | Mathematically optimal ✅ Operationally unacceptable ❌ |
 
-### V2 — Constrained (Recommended)
+### V2 : Constrained (Recommended)
 | | |
 |---|---|
 | Total Cost | $1,328,800 |
@@ -117,10 +116,10 @@ subject to constraints.
 | Avg Transit Time | 35.8 days |
 
 **Optimal Allocation:**
-RC3  — CMA CGM → Pointe-Noire (Hub)  →  50 containers
-RC11 — MSC     → Mombasa (Hub)       → 150 containers
-RC12 — CMA CGM → Mombasa (Hub)       →  50 containers
-RC15 — CMA CGM → Lagos (Hub)         →  50 containers
+RC3  : CMA CGM → Pointe-Noire (Hub)  →  50 containers
+RC11 : MSC     → Mombasa (Hub)       → 150 containers
+RC12 : CMA CGM → Mombasa (Hub)       →  50 containers
+RC15 : CMA CGM → Lagos (Hub)         →  50 containers
 
 ---
 
@@ -128,7 +127,7 @@ RC15 — CMA CGM → Lagos (Hub)         →  50 containers
 
 **1. Hub routing beats direct on Africa lanes**  
 Transshipment hub routes were cheaper than direct routes  
-due to mega-vessel economies of scale — saving up to $550  
+due to mega-vessel economies of scale, saving up to $550  
 per TEU on the Mombasa corridor.
 
 **2. Pure cost optimization isn't enough**  
@@ -137,18 +136,18 @@ needs business constraints to produce business answers.
 
 **3. The $93,400 premium buys resilience**  
 V2 costs more but distributes risk across 3 markets and  
-2 carriers. In supply chain, resilience has a price —  
+2 carriers. In supply chain, resilience has a price,  
 quantifying it is the analyst's job.
 
 **4. Port congestion is a hidden cost**  
-Mombasa — our largest allocation — averages 5.33 days  
+Mombasa, our largest allocation, averages 5.33 days  
 vessel waiting time. This is unmodeled cost that could  
 erode the route's apparent cost advantage.
 
 **5. Rate-only models miss what Maersk actually sells**  
 Maersk received 0 containers on rate alone. But Maersk's  
 Gemini network delivers 90%+ schedule reliability vs  
-60-70% industry average — critical for medical supplies.  
+60-70% industry average, critical for medical supplies.  
 A complete model needs reliability scoring, not just rates.
 
 **6. Geopolitical disruption invalidates static models**  
@@ -195,7 +194,7 @@ at Maersk, building a supply chain analytics portfolio
 that bridges my operational background with data-driven  
 decision making.
 
-This project was built over several weeks — learning  
+This project was built over several weeks, learning  
 Excel Solver, verifying rates against real market data,  
 and refining the model as I learned more about how  
 real freight decisions work.
