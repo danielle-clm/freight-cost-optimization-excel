@@ -199,6 +199,3 @@ This project was built over several weeks — learning
 Excel Solver, verifying rates against real market data,  
 and refining the model as I learned more about how  
 real freight decisions work.
-
-**Danielle Claude Massala**  
-🔗 [LinkedIn](https://www.linkedin.com/in/danielle-m-605721284/)    
