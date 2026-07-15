@@ -201,6 +201,4 @@ and refining the model as I learned more about how
 real freight decisions work.
 
 **Danielle Claude Massala**  
-📍 Pointe-Noire, Congo 
-📧 Dnllmassala@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/danielle-m-605721284/)    
