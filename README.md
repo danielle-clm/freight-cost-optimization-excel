@@ -190,7 +190,7 @@ that without a scenario planning layer.
 ## 👩🏾‍💻 About This Project
 
 I'm a Healthcare Management graduate currently interning  
-at Maersk, building a supply chain analytics portfolio  
+at a logistics company, building a supply chain analytics portfolio  
 that bridges my operational background with data-driven  
 decision making.
 
